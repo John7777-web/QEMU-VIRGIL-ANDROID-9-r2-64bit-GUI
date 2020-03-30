@@ -40,3 +40,5 @@ sudo dhclient -v br0
 systemctl restart libvirtd.service
 
 echo "Rebooting in 5 minutes - abort with CTRL+C" && sleep 300 && reboot
+
+bash

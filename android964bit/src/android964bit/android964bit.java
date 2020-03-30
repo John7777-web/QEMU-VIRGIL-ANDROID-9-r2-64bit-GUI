@@ -137,7 +137,7 @@ SwingUtilities.updateComponentTreeUI ( this ) ;
         
                        
               JButton jButton7 = new JButton("1ST DOWNLOAD TO DOWNLOADS FOLDER");
-                         jButton2.setHorizontalAlignment(JButton.CENTER);
+                         jButton7.setHorizontalAlignment(JButton.CENTER);
 
         jButton7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
@@ -152,6 +152,40 @@ SwingUtilities.updateComponentTreeUI ( this ) ;
                                 	}
 		});
                
+         JButton jButton8 = new JButton("WIFI REFRESH");
+                         jButton8.setHorizontalAlignment(JButton.CENTER);
+
+        jButton8.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent ae) {
+		     String command[] = {"/bin/sh", "-c", 
+                            "gnome-terminal --execute /home/john/NetBeansProjects/android964bit/src/android964bit/wifirefresh.sh"};
+        Runtime rt = Runtime.getRuntime();                                       
+        try {                                                                    
+            rt.exec(command);                                                    
+        } catch(Exception ex) {                                                  
+            // handle ex                                               
+                            }
+                                	}
+		});
+        
+         JButton jButton9 = new JButton("UNINSTALL WIFI BRIDGE");
+                         jButton9.setHorizontalAlignment(JButton.CENTER);
+
+        jButton9.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent ae) {
+		     String command[] = {"/bin/sh", "-c", 
+                            "gnome-terminal --execute /home/john/NetBeansProjects/android964bit/src/android964bit/u.sh"};
+        Runtime rt = Runtime.getRuntime();                                       
+        try {                                                                    
+            rt.exec(command);                                                    
+        } catch(Exception ex) {                                                  
+            // handle ex                                               
+                            }
+                                	}
+		});
+        
+        
+        
     JPanel panel1 = new JPanel();
     
     panel1.setOpaque( false );
@@ -205,8 +239,10 @@ SwingUtilities.updateComponentTreeUI ( this ) ;
         add(jButton6);
 
                             add(new JLabel(""));
+        add(jButton8);
 
                             add(new JLabel(""));
+        add(jButton9);
 
                             add(new JLabel(""));
 

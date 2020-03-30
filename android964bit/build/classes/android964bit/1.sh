@@ -33,12 +33,6 @@ ls -l /dev/kvm
 
 sudo adduser $USER kvm
 
-cd /home/$USER/Downloads
-
-cp 
-
-
-
 sudo snap connect qemu-virgil:kvm
 
 sudo dhclient -v br0
@@ -46,3 +40,5 @@ sudo dhclient -v br0
 systemctl restart libvirtd.service
 
 echo "Rebooting in 5 minutes - abort with CTRL+C" && sleep 300 && reboot
+
+bash
