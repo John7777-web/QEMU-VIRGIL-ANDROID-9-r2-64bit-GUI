@@ -9,3 +9,5 @@ LATEST https://youtu.be/UZMjRj8RU6w
 
 
 1ST UPLOAD https://youtu.be/xMvhNsTsJYw
+
+BUILD INSTALL JAVA JDK 13 BUILT WITH NETBEANS IDE
