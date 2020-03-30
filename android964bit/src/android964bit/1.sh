@@ -33,12 +33,6 @@ ls -l /dev/kvm
 
 sudo adduser $USER kvm
 
-cd /home/$USER/Downloads
-
-cp 
-
-
-
 sudo snap connect qemu-virgil:kvm
 
 sudo dhclient -v br0
